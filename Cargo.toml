@@ -1,0 +1,9 @@
+[package]
+name = "aws-route53-update-record"
+version = "0.1.0"
+authors = ["Sean Bruton <sean@uberfoo.net>"]
+
+[dependencies]
+rusoto_core = "0.32.0"
+rusoto_route53 = "0.32.0"
+clap = { version = "2.31.2", features = ["yaml"] }

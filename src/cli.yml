@@ -1,0 +1,26 @@
+name: aws-route53-update-record
+version: 0.1.0
+author: Sean Bruton <sean@uberfoo.net>
+about: Updates an AWS Route53 A-record with the IP address you specify
+args:
+    - hosted_zone_id:
+        short: z
+        long: zone
+        value_name: HOSTED_ZONE_ID
+        help: The Hosted Zone ID containing the record to update
+        takes_value: true
+        required: true
+    - hostname:
+        short: h
+        long: hostname
+        value_name: HOSTNAME
+        help: The FQDN of the record you want to modify
+        takes_value: true
+        required: true
+    - ip:
+        short: i
+        long: ip
+        value_name: IP_ADDRESS
+        help: The IP address you want the record to point to
+        takes_value: true
+        required: true
